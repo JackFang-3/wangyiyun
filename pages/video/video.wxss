@@ -1,0 +1,101 @@
+
+.header{
+    display: flex;
+    padding: 10rpx;
+}
+.header image{
+    width: 60rpx;
+    height: 60rpx;
+}
+
+.header .search{
+    border: 1rpx solid #eee;
+    /* flex :0 默认值： felx-grow:0,flex-shrink；1,flex-basis:auto */
+    /* flex :1      ： felx-grow:1,flex-shrink；1,flex-basis:0%  */
+    /* flex :auto   ： felx-grow:1,flex-shrink；1,flex-basis:auto  */
+    flex:1;
+    /* 会导致父元素的宽度自动为100% */
+    /* felx-grow:可拉伸,flex-shrink；可压缩,flex-basis:当前元素的宽度 */
+    line-height: 60rpx;
+    text-align: center;
+    font-size: 26rpx;
+    margin: 0 20rpx;
+    color:#d43c33;
+}
+
+.navScroll{
+    display: flex;
+    white-space: nowrap;
+    height:60rpx;
+}
+
+.navScroll .navItem{
+    padding: 0 30rpx;
+    font-size: 28rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+}
+.navScroll .navContent{
+    height: 60rpx;
+    box-sizing: border-box;
+}
+
+.navItem .active{
+    border-bottom: 1rpx solid #de3c33;
+}
+
+
+/* 视频 */
+.videoScroll{
+    margin-top: 10rpx;
+    /* 
+     1vh表示1%视口高度 1wh表示1%视口宽度
+     calc:可以动态计算css宽高
+    */
+    height: calc(100vh - 152rpx);
+    /* height: calc(100vh - 100rpx); */
+    /* 测试页面上拉触底 */
+}
+.videoItem{
+    padding: 0 3%;
+}
+
+.videoItem .common{
+    width: 100%;
+    height: 360rpx;
+    border-radius: 10rpx;
+}
+.videoItem .videoTitle{
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 28rpx;
+    margin:2rpx 0;
+}
+.videoItem .videoDes{
+    height: 100rpx;
+    display: flex;
+    justify-content: space-between;
+    margin:0 0 10rpx 0;
+    border-top: 5rpx solid rgb(231, 227, 227);
+    padding-top: 5rpx;
+}
+.videoItem image{
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+}
+.videoItem .videoText{
+    font-size: 28rpx;
+    line-height: 100rpx;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex:1;
+}
+.videoItem .btn{
+    width:100rpx;
+    background-color: white;
+    height: 100rpx;
+    line-height: 100rpx;
+}

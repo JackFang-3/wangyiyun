@@ -1,0 +1,8 @@
+/* 样式模板的引入 */
+@import "/template/myTemplate/myTemplate.wxss";
+
+.title{
+    font-size: 50rpx;
+    color: red;
+}
+/* 覆盖样式 */

@@ -1,0 +1,135 @@
+@import "/static/iconfont/iconfont.wxss";
+page{
+    height: 100%;
+}
+.songDetailContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+/* 底座 */
+.circle{
+    position: relative;
+    z-index: 100;
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 10rpx 0;
+}
+/* 握杆 */
+.needle{
+    position: relative;
+    top: -40rpx;
+    width: 192rpx;
+    height: 274rpx;
+    left: 60rpx;
+    z-index: 10;
+    /* 设置旋转中心 */
+    transform-origin: 40rpx 0;
+    /* 过渡 */
+    transform: rotate(-20deg);
+    /* 过渡效果 */
+    transition:1s;
+
+}
+.needleRotate{
+    transform: rotate(0deg);
+}
+
+.discContainer{
+    position: relative;
+    top: -170rpx;
+    width: 598rpx;
+    height: 598rpx;
+}
+.discAnimation{
+    animation: disc 4s linear infinite;
+    /* 无限循环动画 */
+    animation-delay: 1s;
+}
+/* 
+  @keyframes:设置动画帧
+  1）from to ---适用于只有两帧的简单动画
+  2）百分比-----适用于不止两帧的复杂动画
+*/
+@keyframes disc{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.disc{
+    width: 100%;
+    height: 100%;
+}
+.musicImg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 370rpx;
+    height: 370rpx;
+    border-radius: 50%;
+}
+
+
+.musicControl{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 40rpx;
+    border-top: 1rpx solid #fff;
+}
+
+.musicControl text{
+    width: 20%;
+    height: 120rpx;
+    line-height: 120rpx;
+    text-align: center;
+    color: #fff;
+    font-size: 50rpx;
+}
+.musicControl .big{
+    font-size: 80rpx;
+}
+
+.progressControl{
+    position: absolute;
+    bottom: 200rpx;
+    width: 640rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    display: flex;
+}
+.barControl{
+    position: relative;
+    width: 450rpx;
+    height: 4rpx;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: auto;
+}
+.currentTime{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4rpx;
+    background-color: red;
+    z-index: 1;
+}
+.audioCircle{
+    position: absolute;
+    right: -12rpx;
+    top: -4rpx;
+    width: 12rpx;
+    height: 12rpx;
+    background-color: #fff;
+    border-radius: 50%;
+}

@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3446812 */
+  src: url('//at.alicdn.com/t/c/font_3446812_ner6o63qjs.woff2?t=1662180684996') format('woff2'),
+       url('//at.alicdn.com/t/c/font_3446812_ner6o63qjs.woff?t=1662180684996') format('woff'),
+       url('//at.alicdn.com/t/c/font_3446812_ner6o63qjs.ttf?t=1662180684996') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shanchu:before {
+  content: "\e718";
+}
+
+.icon-search:before {
+  content: "\e741";
+}
+
+.icon-zanting:before {
+  content: "\e601";
+}
+
+.icon-suijibofang:before {
+  content: "\e622";
+}
+
+.icon-24gl-playCircle:before {
+  content: "\ea6e";
+}
+
+.icon-24gl-playlistMusic5:before {
+  content: "\ea72";
+}
+
+.icon-shangyishou_huaban:before {
+  content: "\e63a";
+}
+
+.icon-xiayishou_huaban:before {
+  content: "\e63b";
+}
+
+.icon-gengduo-shuxiang:before {
+  content: "\e8c4";
+}
+
+.icon-31paixingbang:before {
+  content: "\e600";
+}
+
+.icon-diantai:before {
+  content: "\e621";
+}
+
+.icon-zhibo:before {
+  content: "\e8c1";
+}
+
+.icon-gedan:before {
+  content: "\e636";
+}
+
+.icon-meirituijian:before {
+  content: "\e6e8";
+}
